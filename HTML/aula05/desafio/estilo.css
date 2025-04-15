@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, #22b9c3 12%, #000 95%, #013269 100%);
+}
+
+h1 {
+    color: rgba(0, 0, 0, 0.615);
+    text-align: center;
+    background: #1904ff;
+    margin-bottom: 10px;
+    border-radius: 15%;
+}
+
+h1:hover {
+    color: brown;
+}
+
+#retangulo, #retanguloMenor, #circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#retangulo {
+    width: 500px;
+    height: 300px;
+    background: #047d7d;
+    border: 3px solid white;
+    position: relative;
+}
+
+#retanguloMenor {
+    width: 400px;
+    height: 260px;
+    background: white;
+    border: 3px solid white;
+    border-radius: 20%;
+}
+
+#circle {
+    width: 140px;
+    height: 140px;
+    background: red;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+#descricao {
+    display: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    top: 100%;
+    margin-top: 10px;
+}
+
+#retangulo:hover #descricao {
+    display: block;
+}
