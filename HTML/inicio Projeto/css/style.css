@@ -16,7 +16,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Cabeçalho */
+
 #retangulo {
     display: flex;
     flex-direction: row;
@@ -58,7 +58,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Conteúdo Geral */
+
 main {
     max-width: 900px;
     margin: 30px auto;
@@ -68,7 +68,7 @@ main {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Sobre Nós */
+
 .sobre-nos h1 {
     font-size: 36px;
     background: linear-gradient(to right, rgb(34, 185, 195), rgb(0, 0, 0));
@@ -96,7 +96,7 @@ main {
     text-align: justify;
 }
 
-/* Contato */
+
 .contato h1 {
     font-size: 36px;
     color: rgb(34, 185, 195);
@@ -171,7 +171,7 @@ button:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Menu Principal */
+
 .menu h1 {
     font-size: 36px;
     background: linear-gradient(to right, rgb(34, 185, 195), rgb(0, 0, 0));
@@ -202,9 +202,9 @@ button:hover {
 }
 
 .empresa {
-    display: block; /* Faz o <a> ocupar o espaço como bloco */
-    text-decoration: none; /* Remove sublinhado */
-    color: inherit; /* Herda cores dos filhos */
+    display: block; 
+    text-decoration: none; 
+    color: inherit; 
     background-color: rgba(240, 240, 240, 0.5);
     padding: 20px;
     border-left: 4px solid rgb(34, 185, 195);
@@ -232,7 +232,7 @@ button:hover {
     margin-bottom: 15px;
 }
 
-/* Botão "Saiba Mais" */
+
 .botao-cta {
     display: inline-block;
     text-decoration: none;
