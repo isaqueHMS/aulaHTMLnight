@@ -1,0 +1,26 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgb(34, 185, 195);
+    color: white;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid rgb(20, 150, 160);
+  }
+  
+  footer p {
+    margin: 0;
+    font-weight: 400;
+  }
+  
+  
+  .cta-centralizada {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  

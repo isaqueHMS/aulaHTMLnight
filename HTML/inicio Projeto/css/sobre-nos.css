@@ -1,0 +1,27 @@
+/* Estilo da seção "Sobre Nós" */
+.sobre-nos h1 {
+    font-size: 36px;
+    background: linear-gradient(to right, rgb(34, 185, 195), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    border-bottom: 3px solid rgb(34, 185, 195);
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+  }
+  .sobre-nos p {
+    font-size: 18px;
+    color: rgb(50, 50, 50);
+    line-height: 1.8;
+    padding: 15px;
+    background-color: rgba(240, 240, 240, 0.5);
+    border-left: 4px solid rgb(34, 185, 195);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
