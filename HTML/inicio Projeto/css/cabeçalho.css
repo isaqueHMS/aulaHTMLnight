@@ -22,3 +22,10 @@
     flex-direction: row;
     gap: 20px;
   }
+  .usuario-nome {
+  margin-left: -650px;
+  font-size: 1.2rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
