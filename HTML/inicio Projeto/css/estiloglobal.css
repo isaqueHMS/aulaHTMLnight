@@ -9,6 +9,7 @@ body {
         rgba(0, 0, 0, 1) 95%,
         rgba(1, 50, 105, 1) 100%
       );
+      
       background-size: cover;
       background-attachment: fixed;
       background-repeat: no-repeat;
@@ -17,3 +18,21 @@ body {
       min-height: 100vh;
       font-family: Arial, sans-serif;
     }
+
+    .botao-secundario {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  color: #000000;
+  background-color: transparent;
+  border: 1px solid #22b9c3;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.botao-secundario:hover {
+  background-color: #22b9c3;
+  color: #000;
+  box-shadow: 0 0 10px #22b9c3aa;
+}
