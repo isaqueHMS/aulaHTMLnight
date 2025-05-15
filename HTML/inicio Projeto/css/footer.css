@@ -1,3 +1,6 @@
+
+
+
 footer {
     display: flex;
     justify-content: center;
@@ -9,13 +12,15 @@ footer {
     font-size: 14px;
     position: relative;
     bottom: 0;
-    width: 80%;
+    width: 100%;
     border-top: 2px solid rgb(20, 150, 160);
     border-radius: 10px;
   }
   
   footer p {
-    margin: 20px;
+    display: flex;
+    margin: 15px;
+
   }
   
   
