@@ -99,7 +99,6 @@ menu h1 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 25px;
     padding: 40px 20px;
   }
   
@@ -142,6 +141,7 @@ menu h1 {
 
 
 footer {
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,3 +169,4 @@ footer p {
   justify-content: center;
   margin-top: 30px;
 }
+

@@ -1,33 +1,102 @@
+header {
+  background-color: rgb(0, 112, 107);
+  width: 100%;
+}
+
 #retangulo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(0, 112, 107);
-    border: 2px solid rgb(0, 0, 0);
-    width: 100vw;
-    height: 85px;
-    padding: 0 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3px);;
-    box-shadow: 0 0 15px rgb(82, 150, 240);
-  }
-  
-  #logo {
-    width: 75px;
-    height: 75px;
-    margin-left: 10px;
-  }
-  
-  #navegacao {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
-  .usuario-nome {
-  margin-left: -650px;
-  font-size: 1.2rem;
-  color: #fff;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  background-color: rgb(0, 112, 107);
+  height: 85px;
+  padding: 0 40px;
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 0 5px 15px rgb(82, 150, 240);
 }
+
+#logo {
+  height: 70px;
+}
+
+#navegacao {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+#navegacao a {
+  background-color: #20cfd6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+#navegacao a:hover, .login:hover {
+  background-color: #17a3a8;
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.login {
+  background-color: #20cfd6;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  border: 1px solid black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  transition: background-color 0.3s;
+}
+
+.login:hover {
+  background-color: #17a3a8;
+}
+
+.login i {
+  font-size: 20px;
+}
+
+/* Ícone do menu (3 risquinhos) - oculto em telas grandes */
+#menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+  color: white;
+}
+
+/* Estilo para telas menores */
+@media (max-width: 768px) {
+  #navegacao {
+    display: none;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0, 112, 107);
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 2px solid black;
+  }
+
+  #navegacao a {
+    padding: 10px 40px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+}
+

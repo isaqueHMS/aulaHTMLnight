@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #004d4d, #002633);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,30 +17,47 @@ body {
     width: 100%;
     max-width: 400px;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
 }
 
 .form h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: bold;
 }
 
 .input-container {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .input-container label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #444;
 }
 
 .input-container input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-container input:focus {
+    border-color: #20cfd6;
+    box-shadow: 0 0 5px rgba(32, 207, 214, 0.5);
 }
 
 .buttons {
@@ -51,29 +68,35 @@ body {
 
 .buttons button {
     width: 100%;
-    padding: 10px;
-    background-color: #007bff;
+    padding: 12px;
+    background-color: #20cfd6;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-    margin-bottom: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .buttons button:hover {
-    background-color: #0056b3;
+    background-color: #17a3a8;
+    transform: scale(1.03);
 }
 
 .buttons a {
     color: #007bff;
     text-decoration: none;
     font-size: 14px;
+    margin-top: 8px;
+    transition: color 0.2s;
 }
 
 .buttons a:hover {
+    color: #0056b3;
     text-decoration: underline;
 }
+
 .back-button {
     text-align: center;
     margin-top: 20px;
@@ -83,8 +106,18 @@ body {
     color: #007bff;
     text-decoration: none;
     font-size: 14px;
+    transition: color 0.2s;
 }
 
 .back-button a:hover {
+    color: #0056b3;
     text-decoration: underline;
+}
+
+/* Responsividade extra */
+@media (max-width: 450px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
 }
