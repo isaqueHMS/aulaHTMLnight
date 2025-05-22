@@ -12,20 +12,27 @@
     <link rel="stylesheet" href="css/margin.css" />
     <link rel="stylesheet" href="css/menuprincipal.css" />
     <link rel="stylesheet" href="css/sobre-nos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 <body>
     <div id="usuario-nome" style="font-weight: bold; color: white;"></div>
 </div>
+
     <div id="retangulo">
         <img id="logo" src="./assets/logo.png" alt="Lead Boost Logo">
+        <div id="menu-icon">&#9776;</div>
         <div id="navegacao">
             <a href="index.html" id="botão">Home</a>
             <a href="menu.html" id="botão3">Menu Principal</a>
             <a href="sobre-nos.html" id="botão1">Sobre Nós</a>
             <a href="contato.html" id="botão2">Contato</a>
         </div>
+        <a href="login.html" class="login">
+            <i class="fas fa-user"></i>
+          </a>
     </div>
+    
     <main class="menu">
         <section>
             <h1>Nossas Empresas</h1>
@@ -54,5 +61,12 @@
       </footer>
 </body>
 
-
+  <script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navegacao = document.getElementById('navegacao');
+  
+    menuIcon.addEventListener('click', () => {
+      navegacao.style.display = navegacao.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
 </html>

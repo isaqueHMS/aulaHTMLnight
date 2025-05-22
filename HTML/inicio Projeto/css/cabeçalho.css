@@ -100,3 +100,9 @@ header {
   }
 }
 
+
+.login {
+  order: 3; /* garante que fique no fim em telas pequenas */
+  margin-left: auto; /* empurra para a direita */
+  margin-top: 10px;
+}

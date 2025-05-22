@@ -78,4 +78,31 @@
     transform: translateY(-3px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
+  .login {
+    background-color: #20cfd6;
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    transition: background-color 0.3s;
+  }
   
+  .login:hover {
+    background-color: #17a3a8;
+  }
+  
+  .login i {
+    font-size: 20px;
+  }
+  .fas-user{
+    color: white;
+  }
+  a.login{
+    color: white;
+  }
