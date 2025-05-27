@@ -1,1 +1,0 @@
-var nota1 = prompt("digite a primeira nota:")
